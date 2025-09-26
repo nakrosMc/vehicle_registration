@@ -134,7 +134,26 @@ app.post('/api/vehicles', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Servidor Node.js escuchando en http://localhost:${PORT}`);
 });
-📌 Notas adicionales
+```
+---
+
+## 📝 Datos Demo
+
+El módulo incluye datos demo para facilitar las pruebas iniciales.
+
+Al instalar el módulo, se crean ejemplos de:
+
+- Contactos
+
+- Vehículos asociados a esos contactos
+
+- Logs de envío a la API
+
+Esto permite probar el flujo completo sin necesidad de crear registros manualmente.
+
+---
+
+## 📌 Notas adicionales
 Es obligatorio seleccionar un contacto al crear un vehículo.
 
 La creación de vehículos cuenta con secuencia propia.
