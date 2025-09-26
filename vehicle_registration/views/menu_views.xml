@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Menús Principales -->
+    <menuitem id="menu_fleet_root" name="Flota" sequence="10"/>
+    
+    <menuitem id="menu_fleet_vehicles" 
+              name="Vehículos" 
+              parent="menu_fleet_root" 
+              action="action_fleet_vehicle"
+              sequence="10"/>
+              
+    <menuitem id="menu_fleet_api_logs" 
+              name="Logs de API" 
+              parent="menu_fleet_root" 
+              action="action_api_log"
+              sequence="20"/>
+
+</odoo>

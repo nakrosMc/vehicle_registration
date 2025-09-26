@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <!-- Contactos de prueba -->
+        <record id="demo_partner_1" model="res.partner"><field name="name">Ana Torres</field></record>
+        <record id="demo_partner_2" model="res.partner"><field name="name">Luis Fernández</field></record>
+        <record id="demo_partner_3" model="res.partner"><field name="name">Pedro Martínez</field></record>
+        <record id="demo_partner_4" model="res.partner"><field name="name">Sofía Gómez</field></record>
+        <record id="demo_partner_5" model="res.partner"><field name="name">Ricardo Díaz</field></record>
+
+        <!-- Vehículos de Ana -->
+        <record id="demo_vehicle_ana_1" model="fleet.vehicle">
+            <field name="name">FGA-101</field>
+            <field name="contact_id" ref="demo_partner_1"/>
+            <field name="brand">Toyota</field>
+            <field name="model">Corolla</field>
+            <field name="year">2018</field>
+            <field name="color">Rojo</field>
+            <field name="state">active</field>
+        </record>
+        <record id="demo_vehicle_ana_2" model="fleet.vehicle">
+            <field name="name">FGA-102</field>
+            <field name="contact_id" ref="demo_partner_1"/>
+            <field name="brand">Honda</field>
+            <field name="model">Civic</field>
+            <field name="year">2019</field>
+            <field name="color">Azul</field>
+            <field name="state">maintenance</field>
+        </record>
+
+        <!-- Vehículos de Luis -->
+        <record id="demo_vehicle_luis_1" model="fleet.vehicle">
+            <field name="name">LFA-201</field>
+            <field name="contact_id" ref="demo_partner_2"/>
+            <field name="brand">Ford</field>
+            <field name="model">Focus</field>
+            <field name="year">2020</field>
+            <field name="color">Blanco</field>
+            <field name="state">inactive</field>
+        </record>
+        <record id="demo_vehicle_luis_2" model="fleet.vehicle">
+            <field name="name">LFA-202</field>
+            <field name="contact_id" ref="demo_partner_2"/>
+            <field name="brand">Chevrolet</field>
+            <field name="model">Cruze</field>
+            <field name="year">2021</field>
+            <field name="color">Negro</field>
+            <field name="state">active</field>
+        </record>
+        <record id="demo_vehicle_luis_3" model="fleet.vehicle">
+            <field name="name">LFA-203</field>
+            <field name="contact_id" ref="demo_partner_2"/>
+            <field name="brand">Nissan</field>
+            <field name="model">Sentra</field>
+            <field name="year">2017</field>
+            <field name="color">Gris</field>
+            <field name="state">maintenance</field>
+        </record>
+
+        <!-- Vehículos de Pedro -->
+        <record id="demo_vehicle_pedro_1" model="fleet.vehicle">
+            <field name="name">PRA-301</field>
+            <field name="contact_id" ref="demo_partner_3"/>
+            <field name="brand">Mazda</field>
+            <field name="model">3</field>
+            <field name="year">2016</field>
+            <field name="color">Rojo</field>
+            <field name="state">active</field>
+        </record>
+        <record id="demo_vehicle_pedro_2" model="fleet.vehicle">
+            <field name="name">PRA-302</field>
+            <field name="contact_id" ref="demo_partner_3"/>
+            <field name="brand">Hyundai</field>
+            <field name="model">Elantra</field>
+            <field name="year">2018</field>
+            <field name="color">Azul</field>
+            <field name="state">inactive</field>
+        </record>
+
+        <!-- Vehículos de Sofía -->
+        <record id="demo_vehicle_sofia_1" model="fleet.vehicle">
+            <field name="name">SFA-401</field>
+            <field name="contact_id" ref="demo_partner_4"/>
+            <field name="brand">Volkswagen</field>
+            <field name="model">Golf</field>
+            <field name="year">2022</field>
+            <field name="color">Negro</field>
+            <field name="state">active</field>
+        </record>
+
+        <!-- Vehículos de Ricardo -->
+        <record id="demo_vehicle_ricardo_1" model="fleet.vehicle">
+            <field name="name">RFA-501</field>
+            <field name="contact_id" ref="demo_partner_5"/>
+            <field name="brand">Kia</field>
+            <field name="model">Rio</field>
+            <field name="year">2020</field>
+            <field name="color">Blanco</field>
+            <field name="state">maintenance</field>
+        </record>
+        <record id="demo_vehicle_ricardo_2" model="fleet.vehicle">
+            <field name="name">RFA-502</field>
+            <field name="contact_id" ref="demo_partner_5"/>
+            <field name="brand">Kia</field>
+            <field name="model">Sportage</field>
+            <field name="year">2021</field>
+            <field name="color">Gris</field>
+            <field name="state">active</field>
+        </record>
+
+    </data>
+</odoo>
