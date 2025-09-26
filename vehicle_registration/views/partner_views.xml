@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Vista Form de Contactos con Smart Button -->
+    <record id="view_partner_form_inherit_fleet" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit.fleet</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_view_vehicles" 
+                        type="object" 
+                        string="Vehículos" 
+                        class="btn-secondary"
+                        icon="fa-car"/>
+                        
+                <button name="action_send_to_api" 
+                        type="object" 
+                        string="Enviar a API" 
+                        class="btn-primary"
+                        icon="fa-cloud-upload"
+                        groups="vehicle_registration.group_fleet_manager"/>
+            </xpath>
+            
+            <xpath expr="//field[@name='category_id']/.." position="after">
+                <group string="Vehículos del Contacto">
+                    <field name="vehicle_count" string="Total Vehículos" widget="statinfo"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>
