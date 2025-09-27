@@ -82,13 +82,8 @@ Módulo personalizado de **Odoo 16** para la gestión de vehículos, con integra
 cd vehicle_registration_project/vehicle_api
 Instalar dependencias:
 
-bash
-Copiar código
 npm install
 Iniciar el servidor:
-
-bash
-Copiar código
 node server.js
 Por defecto, correrá en: http://localhost:3000
 
@@ -99,8 +94,6 @@ Recibe un array de vehículos desde Odoo.
 
 Imprime los datos en la consola y devuelve una respuesta JSON:
 
-json
-Copiar código
 {
   "status": "ok",
   "message": "Recibidos X vehiculos"
@@ -108,8 +101,7 @@ Copiar código
 Cada envío se registra en Logs API en Odoo.
 
 Ejemplo de server.js
-javascript
-Copiar código
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
